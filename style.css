@@ -1,0 +1,366 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Background Setup */
+body {
+    font-family: 'Poppins', sans-serif; /* Using a more modern, clean font */
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #34495e; /* Darker background for the header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c; /* Red color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa); /* Beautiful gradient background */
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for a modern effect */
+}
+
+.hero-content p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.section h2 {
+    font-size: 36px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+.tagline-1{
+    font-size: 22px;
+}
+
+/* Skills Section */
+#skills .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item h3 {
+    font-size: 22px;
+    color: #2980b9;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+#experience ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+#experience ul li {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #34495e;
+    font-weight: 500;
+}
+
+#experience ul li::before {
+    content: '✔';
+    color: #e74c3c;
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    border-top: 2px solid #e74c3c; /* Added a red border for a stylish footer */
+}
+.profile-image {
+    width: 150px;         /* Set the size of the image */
+    height: 150px;        /* Set the size of the image */
+    border-radius: 50%;   /* This makes the image round */
+    object-fit: cover;    /* Ensures the image fits well within the circular frame */
+    margin-bottom: 20px;  /* Adds some space below the image */
+}
+
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border: 1px solid #ddd; /* Add border around each portfolio item */
+    border-radius: 8px; /* Rounded corners for portfolio items */
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.portfolio-image {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Round the image corners to match the border */
+}
+
+.portfolio-details {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+.portfolio-details h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.portfolio-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.portfolio-details a.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.portfolio-details a.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    #skills .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-image img {
+        max-width: 100%;
+    }
+
+    .portfolio-details {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-image {
+        max-width: 150px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    #hero .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header.navbar {
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 8px 0;
+    }
+
+    .profile-image {
+        max-width: 120px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 10px 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-details {
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
